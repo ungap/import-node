@@ -1,6 +1,6 @@
 {
   "name": "@ungap/import-node",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An importNode polyfill for IE11 and other legacy browsers",
   "main": "cjs/index.js",
   "module": "esm/index.js",
