@@ -1,0 +1,2 @@
+/*! (c) Andrea Giammarchi - ISC */
+var importNode=function(e,o,n,d,t){var r="importNode"in e,c=e.createDocumentFragment();return c.appendChild(e.createTextNode("g")),c.appendChild(e.createTextNode("")),(r?e.importNode(c,!0):c.cloneNode(!0)).childNodes.length<2?function i(e,o){for(var n=e.cloneNode(),d=e.childNodes||[],t=d.length,r=0;o&&r<t;r++)n.appendChild(i(d[r],o));return n}:r?e.importNode:function(e,o){return e.cloneNode(!!o)}}(document);
