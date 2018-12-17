@@ -5,7 +5,7 @@
 A document [importNode](https://developer.mozilla.org/en-US/docs/Web/API/Document/importNode) polyfill for IE11 and other legacy browsers, with a proper feature detection for deep clones.
 
   * CDN global utility via https://unpkg.com/@ungap/import-node
-  * ESM via `import createContent from '@ungap/import-node'`
-  * CJS via `const createContent = require('@ungap/import-node')`
+  * ESM via `import importNode from '@ungap/import-node'`
+  * CJS via `const importNode = require('@ungap/import-node')`
 
 [Live test](https://ungap.github.io/import-node/test/)
