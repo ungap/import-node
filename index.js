@@ -12,6 +12,7 @@ var importNode = (function (
   var fragment = document.createDocumentFragment();
   fragment[appendChild](document[createTextNode]('g'));
   fragment[appendChild](document[createTextNode](''));
+  /* istanbul ignore next */
   var content = native ?
     document[importNode](fragment, true) :
     fragment[cloneNode](true);
@@ -19,6 +20,7 @@ var importNode = (function (
     function importNode(node, deep) {
       var clone = node[cloneNode]();
       for (var
+        /* istanbul ignore next */
         childNodes = node.childNodes || [],
         length = childNodes.length,
         i = 0; deep && i < length; i++
@@ -27,6 +29,7 @@ var importNode = (function (
       }
       return clone;
     } :
+    /* istanbul ignore next */
     (native ?
       document[importNode] :
       function (node, deep) {
